@@ -3,15 +3,15 @@
 $black: #000 + 68
 $white: #ffffff
 $max-width: 1200px
-$button_color: $black + 119
-$button_color_hover: $button_color - 80
+$button_color: $black + 32
+$button_color_hover: $button_color - 32
 
 body
   background-color: $black +156
   background-image: url("#{$img_path}body.gif")
   color: $black
-  font: 
-    family: 'ヒラギノ明朝 Pro W3','Hiragino Mincho Pro','ＭＳ Ｐ明朝','MS PMincho',serif
+  font:
+    family: 'ヒラギノ明朝 Pro W3','Hiragino Mincho Pro','メイリオ','Meiryo','ＭＳ Ｐゴシック','MS PGothic',sans-serif
 #header
   +background(url("#{$img_path}header.png"))
   padding: 20px 0
@@ -32,11 +32,11 @@ body
           +horizontal-list-item
           padding: 10px 6px
           a
-            font: 
-              family: 'Podkova', serif
+            font:
+              family: 'ヒラギノ明朝 Pro W3','Hiragino Mincho Pro','メイリオ','Meiryo','ＭＳ Ｐゴシック','MS PGothic',sans-serif
               size: $size-20px
             text:
-              decoration: none 
+              decoration: none
             display: block
             padding: 0 12px
             color: $black
@@ -74,22 +74,24 @@ body
               cursor: pointer
               color: $white
               font:
+                family: 'ヒラギノ明朝 Pro W3','Hiragino Mincho Pro','メイリオ','Meiryo','ＭＳ Ｐゴシック','MS PGothic',sans-serif
                 size: $size-12px
               &:hover
                 background-color: $button_color_hover
     h2
       clear: both
       padding: 12px 0 0 0
-      font: 
-        family: 'Podkova', serif
+      font:
+        family: 'ヒラギノ明朝 Pro W3','Hiragino Mincho Pro','メイリオ','Meiryo','ＭＳ Ｐゴシック','MS PGothic',sans-serif
         size: $size-12px
   h1
     a
-      font: 
-        family: 'Podkova', serif
+      font:
+        family: 'ヒラギノ明朝 Pro W3','Hiragino Mincho Pro','メイリオ','Meiryo','ＭＳ Ｐゴシック','MS PGothic',sans-serif
+        weight: bold
         size: 40px
       text:
-        decoration: none 
+        decoration: none
       color: $black
 #main
   width: 640px
@@ -100,7 +102,7 @@ body
 section.comments
   h1
     margin: 0 0 20px 0
-    font: 
+    font:
       family: 'Podkova', serif
       size: $size-18px
   ul.comments
@@ -118,7 +120,7 @@ section.comments
         .date
           font:
             size: $size-10px
-          
+
       .body
         position: relative
         width: 460px
@@ -128,7 +130,7 @@ section.comments
         +border-radius(4px)
         padding: 10px 14px
         line-height: 1.6
-        font: 
+        font:
           size: $size-12px
         &:after, &:before
           right: 100%
@@ -147,7 +149,7 @@ section.comments
           border-width: 10px
           top: 30px
           margin-top: -10px
-        
+
   .comment_form
     .reader
       float: left
@@ -166,7 +168,7 @@ section.comments
       label
         float: left
         line-height: 20px
-        font: 
+        font:
           family: 'Podkova', serif
           size: $size-12px
     .textarea
@@ -191,7 +193,7 @@ section.comments
         color: $white
         display: block
         width: 80px
-        font: 
+        font:
           family: 'Podkova', serif
           size: $size-18px
         &:hover
@@ -219,7 +221,7 @@ section.comments
         decoration: underline
   .copyright
     margin: 0 0 10px 0
-    font: 
+    font:
       size: $size-12px
   .poweredby
     font:
@@ -230,11 +232,11 @@ section.comments
   padding: 0 0 20px 0
   span
     a
-      font: 
+      font:
         family: 'Podkova', serif
         size: $size-20px
       text:
-        decoration: none 
+        decoration: none
       display: block
       padding: 0 12px
       color: $black
@@ -267,18 +269,18 @@ section.comments
     clear: both
     +clearfix
     h1
-      font: 
-        family: 'Podkova', serif
+      font:
+        family: 'ヒラギノ明朝 Pro W3','Hiragino Mincho Pro','メイリオ','Meiryo','ＭＳ Ｐゴシック','MS PGothic',sans-serif
         size: $size-16px
       text:
-        decoration: none 
+        decoration: none
       color: $black
       display: block
       margin: 0 0 10px 0
     ul
       li
         display: block
-        font: 
+        font:
           size: $size-12px
         a
           padding: 2px 8px 0 8px
@@ -301,6 +303,8 @@ section.comments
           padding: 2px 0
           display: block
           a
+            font:
+              family: 'ヒラギノ明朝 Pro W3','Hiragino Mincho Pro','メイリオ','Meiryo','ＭＳ Ｐゴシック','MS PGothic',sans-serif
             padding: 2px 8px 0 8px
             line-height: 1.6
             color: $black
@@ -319,6 +323,8 @@ section.comments
         li
           border-bottom: dotted 1px #eee
           a
+            font:
+              family: 'ヒラギノ明朝 Pro W3','Hiragino Mincho Pro','メイリオ','Meiryo','ＭＳ Ｐゴシック','MS PGothic',sans-serif
             border-bottom: dotted 1px #ccc
             display: block
 
